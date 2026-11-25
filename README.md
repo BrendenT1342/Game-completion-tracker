@@ -46,7 +46,3 @@ No installation or dependencies required.
 ## Contributing
 
 Suggestions and pull requests are welcome. Fork the repo, make your changes on a branch, and open a pull request.
-
-## License
-
-This project is open source. Add a license of your choice (e.g. MIT) in a `LICENSE` file.
