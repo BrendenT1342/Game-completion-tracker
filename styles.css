@@ -1,0 +1,194 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  padding: 0 1rem 2rem;
+  font-family:
+    system-ui,
+    -apple-system,
+    "Segoe UI",
+    Roboto,
+    sans-serif;
+  background: linear-gradient(
+    180deg,
+    rgb(8, 5, 230),
+    rgb(5, 3, 112),
+    rgb(2, 1, 71)
+  );
+  color: #222;
+  line-height: 1.5;
+}
+
+header {
+  background: linear-gradient(
+    -280deg,
+    rgb(122, 25, 248),
+    rgb(80, 10, 150),
+    rgb(64, 5, 119)
+  );
+  color: #fff;
+  text-align: center;
+  padding: 1.25rem 1rem;
+  margin: 0 -1rem 2rem;
+}
+
+header h1 {
+  margin: 0;
+  font-size: 1.75rem;
+}
+
+/* Game progress image */
+.header-img {
+  display: flex;
+  margin: auto;
+  border-radius: 100px;
+  width: 190px;
+}
+
+/* Add-game form */
+.container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 0.75rem;
+  flex-wrap: wrap;
+  max-width: 600px;
+  margin: 0 auto 2rem;
+  padding: 1rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#game-form {
+  display: flex;
+  align-items: center;
+  gap: 0.5rem;
+  flex: 1;
+  min-width: 220px;
+}
+
+#game-name {
+  flex: 1;
+  padding: 0.5rem 0.75rem;
+  font-size: 1rem;
+  border: 1px solid #ccc;
+  border-radius: 6px;
+}
+
+#game-name:focus {
+  outline: none;
+  border-color: #4f46e5;
+  box-shadow: 0 0 0 3px rgba(79, 70, 229, 0.2);
+}
+
+/* Game images */
+.game-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.game-info {
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+}
+
+.game-image {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+#image-preview {
+  width: 156px;
+  height: 156px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+
+/* Section headings */
+h2 {
+  max-width: 600px;
+  margin: 1.5rem auto 0.5rem;
+  font-size: 1.25rem;
+  color: #46b8e5;
+}
+
+/* Lists */
+#game-list,
+#completed-list {
+  max-width: 600px;
+  min-height: 3rem;
+  margin: 0 auto 0.75rem;
+  padding: 0.75rem;
+  background: #fff;
+  border-radius: 10px;
+  box-shadow: 0 2px 6px rgba(0, 0, 0, 0.08);
+}
+
+#game-list > *,
+#completed-list > * {
+  padding: 0.4rem 0;
+  border-bottom: 1px solid #eee;
+}
+
+#game-list > *:last-child,
+#completed-list > *:last-child {
+  border-bottom: none;
+}
+
+#completed-list {
+  color: #666;
+}
+
+/* Buttons */
+button {
+  padding: 0.5rem 1.1rem;
+  font-size: 1rem;
+  font-weight: 600;
+  color: #fff;
+  background: #4f46e5;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition:
+    background 0.15s,
+    transform 0.1s;
+}
+
+button:hover {
+  background: #4338ca;
+}
+
+button:active {
+  transform: scale(0.97);
+}
+
+#complete-button,
+#clear-button {
+  display: block;
+  max-width: 600px;
+  margin: 0 auto 1rem;
+}
+
+#complete-button {
+  background: #16a34a;
+}
+
+#complete-button:hover {
+  background: #15803d;
+}
+
+#clear-button {
+  background: #dc2626;
+}
+
+#clear-button:hover {
+  background: #b91c1c;
+}
